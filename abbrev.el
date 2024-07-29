@@ -2,10 +2,9 @@
 (setq-default abbrev-mode t)
 
 (define-abbrev-table 'web-mode-abbrev-table
-  '(("inscss" "<link rel=\"stylesheet\" type=\"text/css\" href=\"app.css\">")
-    ("insjs" "<script src=\"app.js\"></script>")
-    ("inshtml" "<html>\n\t<head>\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"app.css\">\n\t</head>\n\t<body>\n\t\t<script src=\"app.js\"></script>\n\t</body>\n</html>")
-    ("insbashfor" "for i in \"${arrayName[@]}\"; do\ndone")))
+  '(("ins_css" "<link rel=\"stylesheet\" type=\"text/css\" href=\"app.css\">")
+    ("ins_js" "<script src=\"app.js\"></script>")
+    ("ins_html" "<html>\n\t<head>\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"app.css\">\n\t</head>\n\t<body>\n\t\t<script src=\"app.js\"></script>\n\t</body>\n</html>")))
 
 (define-abbrev-table 'web-mode-abbrev-table
   '(( "dgebi" "document.getElementById(")
@@ -29,8 +28,7 @@
     ( "jRgx" "import java.util.regex.*;\n")
     ( "jUtl" "import java.util.*;\n")
     ( "jSrvlt" "import javax.servlet.*;\n")
-    ( "jAwt" "import java.awt.*;\n")
-    ( "jAwtEvnt" "import java.awt.event.*;\n")
+    ( "jAwt" "import java.awt.*;\nimport java.awt.event.*;")
     ( "clsWndw" "this.addWindowListener( new WindowAdapter() {\n\t\tpublic void windowClosing( WindowEvent e ) {\n\t\t\tSystem.exit( 0 ); \n\t\t}\n});")))
 
 																																																																																											 
