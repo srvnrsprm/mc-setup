@@ -2,9 +2,9 @@
 (setq-default abbrev-mode t)
 
 (define-abbrev-table 'web-mode-abbrev-table
-  '(("ins_css" "<link rel=\"stylesheet\" type=\"text/css\" href=\"app.css\">")
-    ("ins_js" "<script src=\"app.js\"></script>")
-    ("ins_html" "<html>\n\t<head>\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"app.css\">\n\t</head>\n\t<body>\n\t\t<script src=\"app.js\"></script>\n\t</body>\n</html>")))
+  '(("tg_lnk" "<link rel=\"stylesheet\" type=\"text/css\" href=\"app.css\">")
+    ("tg_scrpt" "<script src=\"app.js\"></script>")
+    ("tmplt_html" "<html>\n\t<head>\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"app.css\">\n\t</head>\n\t<body>\n\t\t<script src=\"app.js\"></script>\n\t</body>\n</html>")))
 
 (define-abbrev-table 'web-mode-abbrev-table
   '(( "dgebi" "document.getElementById(")
@@ -24,6 +24,7 @@
   '(( "psvm" "public static void main( String args[] ) throws Exception {\n")
     ( "sop" "System.out.print(")
     ( "sopl" "System.out.println(")
+    ( "ipi" "Integer.parseInt(" )
     ( "jIo" "import java.io.*;\n")
     ( "jRgx" "import java.util.regex.*;\n")
     ( "jUtl" "import java.util.*;\n")
