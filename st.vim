@@ -1,0 +1,9 @@
+set showmatch
+set wrapscan
+set noautowrite
+set tabstop=4
+set shiftwidth=4
+set ignorecase
+"set foldenable
+"set foldmethod=syntax
+"set foldlevel=3
