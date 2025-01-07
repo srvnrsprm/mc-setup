@@ -1,0 +1,2 @@
+* To upgrade a module (say pip)
+sudo python3 -m pip install --upgrade pip

@@ -1,0 +1,20 @@
+# To add a new repo & push it online:::
+	git init
+	touch $name/readME.md   #this is to create an initial file to push
+	git commit -m "enter commit message here"
+	git branch -m master main
+	git remote add origin git@github.com:YOUR_USERNAME/$name.git
+	curl -u USERNAME:PERSONAL_ACCESS_TOKEN https://api.github.com/user/repos -d '{"name":"myDirName"}' 
+	git push origin master
+	## Useful link - https://gist.github.com/alexpchin/dc91e723d4db5018fef8
+
+	sometimes, to correct the wrong remote, use
+		git remote remove origin
+
+# To rename master branch to main
+  git branch -m master main
+  git push -u origin main  ##this is the shortcut for git push --set-upstream origin main. Only needed to be done once when linking local2remote
+  git push origin --delete master
+  ## Useful link - https://www.git-tower.com/learn/git/faq/git-rename-master-to-main
+  ##your Git has origin/sample-branch, your git push -u automatically invokes git branch --set-upstream-to=origin/sample-branch sample-branch.
+  

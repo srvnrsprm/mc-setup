@@ -1,0 +1,13 @@
+Cut a video slice
+ffmpeg -ss 00:00:03 -i input.mpv -t 10 -c:v libx264 -c:a copy out.mpv
+
+Merge two videos:::
+$ cat mylist.nts
+file 'clc1.mkv'
+file 'clc2.mkv'
+    
+$ ffmpeg -f concat -i mylist.nts -c copy output.mkv
+
+
+Convert mpv videos for youtube upload:::
+ffmpeg -i input.avi -c:v libx264 -preset slow -crf 18 -c:a copy -pix_fmt yuv420p output.mkv

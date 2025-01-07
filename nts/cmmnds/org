@@ -1,0 +1,5 @@
+to get fortnightly agenda:::
+	emacs --batch -eval '(org-batch-agenda "a" org-agenda-span 14)'
+to load init file before running batch commands:::
+	emacs --batch -l ~/.emacs.d/init.el -eval '(org-batch-agenda "a" org-agenda-span 14)'
+

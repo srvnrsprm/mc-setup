@@ -1,0 +1,4 @@
+If you want to delete the last history line manually use:
+	history -d $(($HISTCMD - 2)); history -w;
+Or find the line number and use:
+	history -d <line number>; history -w;

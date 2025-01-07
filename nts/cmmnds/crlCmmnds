@@ -1,0 +1,11 @@
+shopBill:::::::
+curl http://localhost:8080/shopBill/api/get
+curl -X POST -d "itmCntnt=There is a temple renovation ceremony planned next week&evntDt=05/24/2023" http://localhost:8080/shopBill/api/add
+curl -X POST -d "evntId=1" http://localhost:8080/shopBill/api/delete
+
+Dictionary word lookup:::
+curl https://dictionaryapi.com/api/v3/references/thesaurus/json/evince?key=b2cc8af0-500b-47a0-bdcb-b1ce4206c5f6 | python -m json.tool
+
+FolderTreeListing:::::
+curl http://localhost:8080/tst/api/getTree?flPth=/home/sk
+
