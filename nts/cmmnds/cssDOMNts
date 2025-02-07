@@ -1,0 +1,4 @@
+To get computed css style:
+	alert( document.defaultView.getComputedStyle( document.body, "" ).getPropertyValue( "background-color" ) );
+Alternatively using computedStyleMap:
+	https://developer.mozilla.org/en-US/docs/Web/API/Element/computedStyleMap

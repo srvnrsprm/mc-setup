@@ -2,9 +2,10 @@
 (setq-default abbrev-mode t)
 
 (define-abbrev-table 'web-mode-abbrev-table
-  '(("ins_css" "<link rel=\"stylesheet\" type=\"text/css\" href=\"app.css\">")
-    ("ins_js" "<script src=\"app.js\"></script>")
-    ("ins_html" "<html>\n\t<head>\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"app.css\">\n\t</head>\n\t<body>\n\t\t<script src=\"app.js\"></script>\n\t</body>\n</html>")))
+  '(("tgLnk" "<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">")
+    ("tgScrpt" "<script src=\"app.js\"></script>")
+    ("tmpltHtml" "<html>\n\t<head>\n\t\t<meta charset=\"utf-8\">\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n\t</head>\n\t<body>\n\t\t<script src=\"app.js\"></script>\n\t</body>\n</html>")
+    ("clssCntnr" "<div class=\"container\">\n</div>")))
 
 (define-abbrev-table 'web-mode-abbrev-table
   '(( "dgebi" "document.getElementById(")
@@ -24,11 +25,13 @@
   '(( "psvm" "public static void main( String args[] ) throws Exception {\n")
     ( "sop" "System.out.print(")
     ( "sopl" "System.out.println(")
+    ( "ipi" "Integer.parseInt(" )
     ( "jIo" "import java.io.*;\n")
     ( "jRgx" "import java.util.regex.*;\n")
     ( "jUtl" "import java.util.*;\n")
     ( "jSrvlt" "import javax.servlet.*;\n")
     ( "jAwt" "import java.awt.*;\nimport java.awt.event.*;")
+    ( "tmpltAwt" "setSize(300, 300 );\nsetVisible( true );\nsetLocation(200, 200 ); this.addWindowListener( new WindowAdapter() {\n\t\tpublic void windowClosing( WindowEvent e ) {\n\t\t\tSystem.exit( 0 ); \n\t\t}\n});" )
     ( "clsWndw" "this.addWindowListener( new WindowAdapter() {\n\t\tpublic void windowClosing( WindowEvent e ) {\n\t\t\tSystem.exit( 0 ); \n\t\t}\n});")))
 
 																																																																																											 

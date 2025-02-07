@@ -1,0 +1,3 @@
+* To get the size of an image:::
+Sec#47
+(image-size (create-image "/home/sk/org/hectrDeSlva.jpg" ) t)
