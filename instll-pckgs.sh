@@ -5,6 +5,6 @@ while read pckg; do
 		echo "$pckg is already installed"
 	else
 		echo -e "\033[0;31m$pckg is not installed, so trying to install\033[0;30m"
-		sudo apt install $pckg
+		sudo apt -y install $pckg
 	fi
 done < pckgs-lst

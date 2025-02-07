@@ -32,3 +32,5 @@ alias trnct='truncate --size 0 '
 alias unex='chmod u-x'
 alias nodejs=node
 alias nd=node
+alias mycal='cal `date +"%m %Y"`'
+alias mydt='date +"%d-%m/%a"'
